@@ -19,8 +19,8 @@ module.exports = {
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
-    new webpack.DefinePlugin({'process.env.NODE_ENV': JSON.stringify('development')
-    })
+    new webpack.DefinePlugin({'process.env.NODE_ENV': JSON.stringify('development') }),
+    new webpack.OldWatchingPlugin()
   ],
   resolve: {
     extensions: ['', '.js', '.jsx']
@@ -36,7 +36,7 @@ module.exports = {
           plugins: ['transform-runtime'],
           presets: ['es2015', 'stage-0', 'react'],
         }
-      }, 
+      },
       {
         test: /\.json?$/,
         loader: 'json'
@@ -45,10 +45,10 @@ module.exports = {
         test: /\.css?$/,
         loaders: ['style', 'raw'],
         include: __dirname
-      }, 
-      { test: /\.(jpe?g|png|gif|svg)$/, 
-        loader: 'url', 
-        query: {limit: 10240} 
+      },
+      { test: /\.(jpe?g|png|gif|svg)$/,
+        loader: 'url',
+        query: {limit: 10240}
       }
     ]
   }

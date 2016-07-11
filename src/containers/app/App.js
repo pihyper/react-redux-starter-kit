@@ -6,7 +6,6 @@ import Footer from '../../components/footer/Footer';
 
 import { logout } from '../../actions/auth';
 
-import './app.css';
 
 class App extends Component {
   constructor(props) {
@@ -22,14 +21,11 @@ class App extends Component {
   render() {
     const { user } = this.props;
     return (
-      <div className="container-fluid">
-
-        <Header location={this.props.location} user={user} handleLogout={() => this.handleLogout()}/>
-        <div className="appContent">
+        <div>
+          <Header/>
           {this.props.children}
+          <Footer/>
         </div>
-        <Footer/>
-      </div>
     );
   }
 }
@@ -54,5 +50,5 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(
-  mapStateToProps
+    mapStateToProps
 )(App);

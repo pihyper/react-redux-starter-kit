@@ -20,10 +20,11 @@ const app = express();
 
 // Webpack dev server
 if (isDeveloping) {
-  const WEBPACK_PORT = 3001;
+  const WEBPACK_PORT = 3000;
   const compiler = webpack(webpackConfig);
   app.use(webpackMiddleware(compiler, {
     publicPath: webpackConfig.output.publicPath,
+    hot: true,
     stats: {
       colors: true,
       hash: false,
@@ -49,7 +50,7 @@ const publicPath = path.resolve(__dirname);
 app.use(bodyParser.json({ type: 'application/json' }))
 app.use(express.static(publicPath));
 
-const port = isProduction ? (process.env.PORT || 80) : 3000;
+const port = isProduction ? (process.env.PORT || 80) : 3001;
 
 // this is necessary to handle URL correctly since client uses Browser History
 app.get('*', function (request, response){
@@ -66,14 +67,14 @@ app.post('/api/login', function(req, res) {
           id_token: jwtToken
         });
 
-        //res.json({'user': credentials.user, 'role': 'ADMIN'});   
+        //res.json({'user': credentials.user, 'role': 'ADMIN'});
       }else{
         res.status(401).json({'message' : 'Invalid user/password'});
       }
 });
 
 app.post('/api/logout', function(req, res) {
-    res.status(200).json({'message' : 'User logged out'});   
+    res.status(200).json({'message' : 'User logged out'});
 });
 
 // We need to use basic HTTP service to proxy
@@ -85,4 +86,4 @@ server.listen(port, function (err, result) {
     console.log(err);
   }
   console.log('Server running on port ' + port);
-}); 
+});

@@ -3,15 +3,11 @@
   "version": "0.0.1",
   "description": "Yet another React/Redux Starter Kit",
   "scripts": {
-    "dev": "babel-node server.js",
-    "build": "rimraf dist && NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors",
-    "start": "NODE_ENV=production PORT=80 babel-node server.js",
     "lint": "eslint src; exit 0",
     "clean": "rimraf dist",
-    
-    "dev-win": "SET NODE_ENV=development&&babel-node server.js",
-    "build-win": "rimraf dist && SET NODE_ENV=production&& webpack --config ./webpack.production.config.js --progress --profile --colors",
-    "start-win": "SET NODE_ENV=production&&SET PORT=80&&babel-node server.js"
+    "dev": "SET NODE_ENV=development&&babel-node server.js",
+    "build": "rimraf dist && SET NODE_ENV=production&& webpack --config ./webpack.production.config.js --progress --profile --colors",
+    "start": "SET NODE_ENV=production&&SET PORT=80&&babel-node server.js"
   },
   "repository": {
     "type": "git",
@@ -73,7 +69,7 @@
     "raw-loader": "^0.5.1",
     "file-loader": "^0.9.0",
     "url-loader": "^0.5.7",
-    "rimraf": "^2.5.3", 
+    "rimraf": "^2.5.3",
     "express": "^4.14.0",
     "webpack": "^1.13.1",
     "webpack-dev-middleware": "^1.6.1",
