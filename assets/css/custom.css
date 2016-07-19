@@ -5,6 +5,15 @@
   padding-top:0px;
 }
 
+@media (min-width: 768px){
+  .nav-primary .nav-item {
+    margin: 0 44px 0 0;
+    position: relative;
+  }
+}
+.header-bottom-inner{
+  left: -24px;
+}
 .cover.cover-center {
   background: #F9f9f8;
 }
@@ -21,13 +30,13 @@
 }
 
 .header-top{
-  padding: 14px 1000px;
+  padding: 0px 1000px 20px 1000px;
 }
 .header-top-inner {
   margin-top: 21px;
 }
 .cover.cover-center{
-  background: url('https://uae.dubizzle.com/static/home/img/search-backgrounds/search-background-image-7.jpg')
+  background: url('/assets/img/search-bg1.jpg')
 }
 .box-icon{
   color:#fff;
@@ -38,4 +47,24 @@ h6 {
 }
 .box-content h6 {
   color: #fff;
+}
+.page-header{
+  padding: 60px 0 0px;
+}
+.header-topbar{
+  padding: 0px 1000px;
+}
+
+.orange{
+  color: #EC7D31;
+}
+.nav-topbar .nav-link .fa{
+  border: none;
+}
+
+.special{
+  background: #EC7D31;
+  color: #fff !important;
+  padding: 15px 14px !important;
+  border-radius:0px !important;
 }
