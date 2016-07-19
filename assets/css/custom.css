@@ -1,12 +1,41 @@
-.black{
-    color:#000 !important;
+.cover-image {
+    background-image: url("https://abudhabi.dubizzle.com/static/home/img/search-backgrounds/search-background-image-1.jpg");
 }
-.red{
-    color: #ff0000 !important;
+.main{
+  padding-top:0px;
 }
-.yellow{
-    color: #ffff00 !important;
+
+.cover.cover-center {
+  background: #F9f9f8;
 }
-.logo a.brand img{
-    max-width:265px;
+.cover-title-inner h1{
+  color:#fff;
+}
+.cover.cover-center{
+  height:240px;
+}
+@media (min-width: 1200px){
+  .container, .map-filter-wrapper {
+    max-width: 1260px;
+  }
+}
+
+.header-top{
+  padding: 14px 1000px;
+}
+.header-top-inner {
+  margin-top: 21px;
+}
+.cover.cover-center{
+  background: url('https://uae.dubizzle.com/static/home/img/search-backgrounds/search-background-image-7.jpg')
+}
+.box-icon{
+  color:#fff;
+}
+
+h6 {
+  font-size: 0.8rem;
+}
+.box-content h6 {
+  color: #fff;
 }
