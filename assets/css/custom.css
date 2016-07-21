@@ -5,6 +5,9 @@
   padding-top:0px;
   padding: 0px 59px;
 }
+.push-bottom {
+  margin-bottom: 50px;
+}
 @media (min-width: 1200px){
   .container, .map-filter-wrapper {
     max-width: 1050px;
@@ -17,7 +20,8 @@
   /*}*/
 /*}*/
 .header-bottom-inner{
-  left: 7px;
+  /*left: 7px;*/
+  background: #fff;
 }
 /*.cover.cover-center {*/
   /*background: #F9f9f8;*/
@@ -40,6 +44,7 @@
 .header-top{
   padding: 9px 1007px;
   min-height: 87px;
+  box-shadow: none;
 }
 .header-top-inner {
   margin-top: 1rem;
@@ -49,8 +54,8 @@
   background-color: #f9f9f8
 }
 .header-bottom{
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
-  padding: 0 993px;
+  /*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);*/
+  padding: 0 1006px;
 }
 .cover.cover-center{
   background: url('/assets/img/damascus.jpg');
@@ -66,9 +71,13 @@
 .box-content h6 , .box-icon .fa {
   color: #fff;
 }
-.box{
+.box {
   padding-top: 10px;
-  padding-bottom: 48px;
+  padding-bottom: 11px;
+}
+.box-bg{
+  background: rgba(0, 0, 0, 0.49);
+  display: -webkit-box;
 }
 .box-icon .fa{
   font-size:30px;
