@@ -1,70 +1,105 @@
-.cover-image {
-    background-image: url("https://abudhabi.dubizzle.com/static/home/img/search-backgrounds/search-background-image-1.jpg");
-}
+/*.cover-image {*/
+    /*background-image: url("https://abudhabi.dubizzle.com/static/home/img/search-backgrounds/search-background-image-1.jpg");*/
+/*}*/
 .main{
   padding-top:0px;
 }
 
-@media (min-width: 768px){
-  .nav-primary .nav-item {
-    margin: 0 44px 0 0;
-    position: relative;
-  }
-}
+/*@media (min-width: 768px){*/
+  /*.nav-primary .nav-item {*/
+    /*margin: 0 3.4rem 0 0 !important;*/
+    /*position: relative;*/
+  /*}*/
+/*}*/
 .header-bottom-inner{
-  left: -24px;
+  left: 7px;
 }
-.cover.cover-center {
-  background: #F9f9f8;
-}
-.cover-title-inner h1{
-  color:#fff;
+/*.cover.cover-center {*/
+  /*background: #F9f9f8;*/
+/*}*/
+/*.cover-title-inner h1{*/
+  /*color:#fff;*/
+/*}*/
+.cover-title{
+  top: 71%;
 }
 .cover.cover-center{
-  height:240px;
+  height:400px;
 }
-@media (min-width: 1200px){
-  .container, .map-filter-wrapper {
-    max-width: 1260px;
-  }
-}
+/*@media (min-width: 1200px){*/
+  /*.container, .map-filter-wrapper {*/
+    /*max-width: 1260px;*/
+  /*}*/
+/*}*/
 
 .header-top{
-  padding: 0px 1000px 20px 1000px;
+  padding: 9px 1000px;
+  min-height: 87px;
 }
 .header-top-inner {
-  margin-top: 21px;
+  margin-top: 1rem;
+  margin-left: -15px;
+}
+.header{
+  background-color: #f9f9f8
+}
+.header-bottom{
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 .cover.cover-center{
-  background: url('/assets/img/search-bg1.jpg')
+  background: url('/assets/img/damascus.jpg');
+  background-size: cover;
 }
-.box-icon{
-  color:#fff;
-}
+/*.box-icon{*/
+  /*color:#fff;*/
+/*}*/
 
-h6 {
-  font-size: 0.8rem;
-}
-.box-content h6 {
+/*h6 {*/
+  /*font-size: 0.8rem;*/
+/*}*/
+.box-content h6 , .box-icon .fa {
   color: #fff;
 }
-.page-header{
-  padding: 60px 0 0px;
+.box-icon .fa{
+  font-size:30px;
 }
-.header-topbar{
-  padding: 0px 1000px;
+.box:hover .box-icon, .orange .fa{
+  color: #FD1B00;
 }
+.btn-primary, .pricing-btn {
+  background-color: #FD1B00;
+}
+/*.page-header{*/
+  /*padding: 60px 0 0px;*/
+/*}*/
+/*.header-topbar{*/
+  /*padding: 0px 1000px;*/
+/*}*/
 
-.orange{
-  color: #EC7D31;
-}
-.nav-topbar .nav-link .fa{
-  border: none;
-}
+/*.orange{*/
+  /*color: #EC7D31;*/
+/*}*/
+/*.nav-topbar .nav-link .fa{*/
+  /*border: none;*/
+/*}*/
 
-.special{
-  background: #EC7D31;
-  color: #fff !important;
-  padding: 15px 14px !important;
-  border-radius:0px !important;
+
+/*.special{*/
+  /*background: #EC7D31;*/
+  /*color: #fff !important;*/
+  /*padding:15px 18.7px !important;*/
+/*}*/
+.orange .fa{
+  color: #FD1B00
+}
+.page-header h1{
+  text-align: left;
+
+}
+.footer-top{
+  background-color: #e0e0e0;
+  color:#000;
+}
+.footer-wrapper{
+  background-color: #c1bdbd;
 }
