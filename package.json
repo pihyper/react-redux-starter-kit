@@ -5,9 +5,9 @@
   "scripts": {
     "lint": "eslint src; exit 0",
     "clean": "rimraf dist",
-    "dev": "SET NODE_ENV=development&&babel-node server.js",
-    "build": "rimraf dist && SET NODE_ENV=production&& webpack --config ./webpack.production.config.js --progress --profile --colors",
-    "start": "SET NODE_ENV=production&&SET PORT=80&&babel-node server.js"
+    "dev": "NODE_ENV=development babel-node server.js",
+    "build": "rimraf dist && NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors",
+    "start": "NODE_ENV=production PORT=80 babel-node server.js"
   },
   "repository": {
     "type": "git",
